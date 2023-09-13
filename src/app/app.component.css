@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    /*CONTAINER STYLES*/
+.container_grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+    /*ITEMS STYLES GENERAL*/
+.container_grid .items {
+    border: 1px solid #eee;
+}
+
+    /*ITEMS SPECIFIC*/
+
+    .items:nth-child(1) {
+        background-color: white !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items:nth-child(1) input[type="text"] {
+        width: 250px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid rgb(12, 238, 12);
+        outline: none;
+    }
+
+    .items:nth-child(1) input[type="text"]:focus {
+        border: 1px solid rgb(4, 114, 4);
+    }
+
+    .items:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .items:nth-child(3) .title {
+        color: #969292;
+        padding: 20px;
+    }
+
+    
+
+    /*CONTAINER FILTERS MENU STYLES*/
+    .container_filters {
+        width: 55%;
+        padding: 20px;
+    }
+
+    /*FILTERS MENU STYLES*/
+    .container_filters ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        
+    }
+
+    .container_filters ul li {
+        border: 1px solid rgb(12, 238, 12);
+        border-radius: 5px;
+        padding: 7px;
+    }
+
+    /*=============CARD SALE============*/
+
+
+        /*=======TOP INFO=======*/
+
+    .items:nth-child(4) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .items:nth-child(4) img {
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .items:nth-child(5) .top_info {
+        display: flex;
+    }
+
+    .top_info .price_property {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border-right: 1px solid #eee;
+        color: #333;
+        font-size: 1em;
+    }
+
+    .top_info .location_property {
+        padding: 20px;
+        
+    }
+
+    .title_street {
+        font-size: 1.5em;
+    }
+
+    .title_location {
+        color: #ccc;
+    }
+
+
+
+    /*=======MIDDLE INFO======*/
+
+    .middle_info {
+        padding: 5px;
+        padding-left: 30px;
+    }
+    
+    .description_location {
+        color: #afaeae;
+        padding-bottom: 10px;
+    }
+
+    .description_location p {
+        border-bottom: 1px solid #ccc;
+        width: 95%;
+        padding-bottom: 10px;
+    }
+
+
+    /*=========LAST INFO=========*/
+    .property_description {
+        color: #ccc;
+        padding-left: 30px;
+    }
+
